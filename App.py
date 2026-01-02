@@ -649,37 +649,39 @@ with tab3:
     
     cat_col1, cat_col2, cat_col3 = st.columns(3)
     
-    with cat_col1:
-        st.markdown("#### Academic Features")
-        st.write("""
-        - Last Exam Score
-        - Assignment Scores
-        - Attendance
-        - Concept Understanding
-        - Class Participation
-        """)
-    
-    with cat_col2:
-        st.markdown("#### AI Usage Features")
-        st.write("""
-        - AI Tool Selection
-        - Usage Time
-        - AI Dependency
-        - Generated Content %
-        - Prompts per Week
-        - Ethics Score
-        """)
-    
-    with cat_col3:
-        st.markdown("#### Lifestyle Features")
-        st.write("""
-        - Study Hours
-        - Sleep Hours
-        - Social Media Time
-        - Tutoring Hours
-        - Study Consistency
-        - Improvement Rate
-        """)
+    cat_col1, cat_col2, cat_col3 = st.columns(3)
+
+with cat_col1:                                    # No indent
+    st.markdown("#### Academic Features")        # 4 spaces
+    st.write("""                                   # 4 spaces
+    - Last Exam Score
+    - Assignment Scores
+    - Attendance
+    - Concept Understanding
+    - Class Participation
+    """)
+
+with cat_col2:                                    # No indent
+    st.markdown("#### AI Usage Features")        # 4 spaces
+    st.write("""                                   # 4 spaces
+    - AI Tool Selection
+    - Usage Time
+    - AI Dependency
+    - Generated Content %
+    - Prompts per Week
+    - Ethics Score
+    """)
+
+with cat_col3:                                    # No indent
+    st.markdown("#### Lifestyle Features")       # 4 spaces
+    st.write("""                                   # 4 spaces
+    - Study Hours
+    - Sleep Hours
+    - Social Media Time
+    - Tutoring Hours
+    - Study Consistency
+    - Improvement Rate
+    """)
 
 # =============================================================================
 # TAB 4: ABOUT
